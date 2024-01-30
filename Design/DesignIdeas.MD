@@ -11,3 +11,9 @@ Personal budget tracker
 Event countdown timer
 Fitness challenge tracker
 
+
+# Chosen Idea
+
+Movie and TV show explorer  (add music) add a trailer once click
+
+
