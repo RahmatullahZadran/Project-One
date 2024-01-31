@@ -1,3 +1,10 @@
 console.log("Hello World");
 
-// back orung colour to rahmatulluah wokirng on it 
+//popup function, Rahmatullah working on it
+function openPopup() {
+    document.getElementById('overlay').style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+  }
