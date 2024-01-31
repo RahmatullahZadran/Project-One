@@ -9,3 +9,107 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-title h5 {
+    font-size: 40px;
+    color: white;
+    padding-left: 15px;
+}
+
+.footer-links a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.social-links .fa-brands {
+    font-size: 50px;
+    padding: 15px;
+}
+
+.social-links .fa-brands:hover {
+    background-color: lightblue;
+    box-shadow: 0px 0px 5px 3px lightblue;
+}
+
+.social-links h5 {
+    font-size: 25px;
+    color: white;
+}
+
+#footer-logo {
+    height: 250px;
+    border-radius: 5px;
+}
