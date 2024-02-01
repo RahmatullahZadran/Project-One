@@ -157,6 +157,7 @@ body {
 
   /* Styles for the popup */
   .popup {
+    color: white;
     background: #1b1b1b;
     padding: 20px;
     border-radius: 5px;
@@ -166,11 +167,18 @@ body {
   /* Styles for the close button */
   .close {
     background-color: #802525; ;
-    color: #802525;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 0 5px 1px red;
   }
 
-
+.moreInfo {
+    font-size: 30px;
+    background-color: blue;
+    color: white;
+    margin-block-end: auto;
+    margin-left: 250px;
+    box-shadow: 0 0 10px 1px blueviolet;
+}
