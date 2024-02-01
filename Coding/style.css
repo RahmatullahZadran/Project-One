@@ -318,7 +318,7 @@ body { padding-top: 40px; }
   
   
   
-  
+/*   
   #movie-card {
     position: relative;
     overflow: hidden;
@@ -336,7 +336,7 @@ body { padding-top: 40px; }
     background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
     transform: skewX(-20deg);
     animation: shine 1.5s infinite;
-  }
+  } */
 
   @keyframes shine {
     0% {
