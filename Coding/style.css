@@ -326,7 +326,7 @@ body { padding-top: 40px; }
     border-radius: 10px;
   }
 
-  #movie-card::before {
+  /* #movie-card::before { */
     content: '';
     position: absolute;
     top: 0;
@@ -369,6 +369,22 @@ body { padding-top: 40px; }
     border-radius: 10px;
     /* margin-right: 200px; */
 }
+
+
+
+
+
+.picture-cards {
+      position: relative;
+      z-index: 1; /* Ensure text is above the background overlay */
+    }
+
+    
+    .words {
+      color: rgba(255, 255, 255, 0.9); /* Set a transparent white color for text */
+    }  
+
+     
 
 
 
