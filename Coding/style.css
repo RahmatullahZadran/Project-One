@@ -157,13 +157,25 @@ body {
 
   /* Styles for the popup */
   .popup {
-    background: #fff;
+    color: white;
+    background: #1b1b1b;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 50px blueviolet;
+  }
+
+  /* Styles for the close button */
+  .close {
+    background-color: #802525; ;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px red;
   }
 
 
+<<<<<<< HEAD
 
 
 
@@ -282,6 +294,9 @@ body {
   
   
   #movie-card {
+=======
+ .card {
+>>>>>>> a0007c68e62be91f4a5dd7a7449c1cd62df7a807
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -308,5 +323,132 @@ body {
       left: 100%;
     }
   }
+
+.moreInfo {
+    font-size: 30px;
+    background-color: blue;
+    color: white;
+    margin-block-end: auto;
+    margin-left: 250px;
+    box-shadow: 0 0 10px 1px blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
 
 
