@@ -199,7 +199,6 @@ body { padding-top: 40px; }
   }
 
 
-<<<<<<< HEAD
 
 
 
@@ -318,9 +317,6 @@ body { padding-top: 40px; }
   
   
   #movie-card {
-=======
- .card {
->>>>>>> a0007c68e62be91f4a5dd7a7449c1cd62df7a807
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
