@@ -318,16 +318,59 @@ body { padding-top: 40px; }
   
   
   
-/*   
-  #movie-card {
-    position: relative;
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+position: relative;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-  }
+  } */
 
   /* #movie-card::before { */
-    content: '';
+    /* content: '';
     position: absolute;
     top: 0;
     left: -100%;
@@ -338,14 +381,14 @@ body { padding-top: 40px; }
     animation: shine 1.5s infinite;
   } */
 
-  @keyframes shine {
+  /* @keyframes shine {
     0% {
       left: -100%;
     }
     100% {
       left: 100%;
     }
-  }
+  } */
 
 .moreInfo {
     font-size: 30px;
