@@ -9,6 +9,10 @@ body {
     background-color: aqua;
 }
 
+#intro {
+    font-family: monospace;
+    font-size: 60px;
+}
 
 
 
