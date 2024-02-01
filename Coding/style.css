@@ -172,6 +172,8 @@ body {
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 0 5px 1px red;
+    padding: 5px;
+    border-radius: 10px;
   }
 
 .moreInfo {
@@ -181,4 +183,18 @@ body {
     margin-block-end: auto;
     margin-left: 250px;
     box-shadow: 0 0 10px 1px blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.thumbs {
+    font-size: 30px;
+    /* background-color: blue; */
+    color: white;
+    margin-block-end: auto;
+    /* margin-left: 250px; */
+    /* box-shadow: 0 0 10px 1px blueviolet; */
+    padding: 5px;
+    border-radius: 10px;
+    /* margin-right: 200px; */
 }
