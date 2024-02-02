@@ -1,5 +1,6 @@
-nav div img {
+.logo {
     height: 70px;
+    width: 70px;
     padding-left: 15px;
     padding-top: 10px;
 }
@@ -543,12 +544,6 @@ body {
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-.Logo {
-    width: 123px;
-    height: 75px;
-    transform: translateY(-3px);
 }
 
 body { padding-top: 40px; }
