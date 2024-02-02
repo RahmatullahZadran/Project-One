@@ -80,6 +80,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.Logo {
+    width: 150px;
+    height: 90px;
+    transform: translateY(-3px);
+}
+
 body { padding-top: 40px; }
 
 .navbar {
