@@ -54,8 +54,9 @@ $("#find-movie").on("click", function (event) {
       var movieView = $("#movie-view");
 
       $("#movie-view").append("<h2>" + data.Title + "</h2>");
+
       $("#movie-view").append(
-        "<img src=" + data.Poster + " alt=" + data.Title + ">"
+        "<img height=300 width=200 src=" + data.Poster + " alt=" + data.Title + ">"
       );
       $("#movie-view").append("<p>Year: " + data.Year + "</p>");
       $("#movie-view").append("<p>Rated: " + data.Rated + "</p>");
@@ -65,6 +66,13 @@ $("#find-movie").on("click", function (event) {
       $("#movie-view").append("<p>Runtime: " + data.Runtime + "</p>");
       $("#movie-view").append("<p>Plot: " + data.Plot + "</p>");
       $("#movie-view").append("<p>Actors: " + data.Actors + "</p>");
+      movieView.css("display", "block");
+    
+      
+      movieView.css("border-radius", "20px");
+      movieView.css("box-shadow", "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)");
+      movieView.css("padding", "20px");
+      movieView.css("background-color", "grey");
     });
 });
 
