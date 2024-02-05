@@ -26,6 +26,13 @@ function openPopup() {
 
 // This .on("click") function will trigger the Fetch Call
 $("#find-movie").on("click", function (event) {
+
+  //empty previous movie
+  $("#movie-view").empty();
+
+  $(".front").remove();
+  // changeWebsite()
+
   // Preventing the submit button from trying to submit the form
   // We're optionally using a form so the user may hit Enter to search instead of clicking the button
   event.preventDefault();
@@ -60,3 +67,5 @@ $("#find-movie").on("click", function (event) {
       $("#movie-view").append("<p>Actors: " + data.Actors + "</p>");
     });
 });
+
+
