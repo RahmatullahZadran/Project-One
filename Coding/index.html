@@ -53,12 +53,17 @@
 
       </div>
     </div>
+
     <form class="d-flex mt-3" role="search" id="movie-search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="movie-input">
+      <button class="btn btn-outline-success" id="find-movie" type="submit">Search</button>
+  </form>
+    <!-- <form class="d-flex mt-3" role="search" id="movie-search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="movie-input">
           <a href="./search-page.html">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </a>
-        </form>
+        </form> -->
   </div>
 </nav>
 <br>
@@ -66,16 +71,15 @@
 <br>
       <!-- SHWETA T END -->
       <!-- MOSES A START -->
-
       <!-- Card class for just below navbar -->
-      <div class="card" style="width: 100%; height: 50%;">
+      <div class="card front" style="width: 100%; height: 50%;">
         <div class="card-body">
           <h5 class="card-title" id="intro"></h5>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
 
-      <div class="btn-group">
+      <div class="btn-group front">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Action
         </button>
@@ -86,14 +90,15 @@
         </ul>
       </div>
 <!-- Cards  -->
-<div class="container">
+
+<div  class="container front">
 <div class="row row-cols-1 row-cols-md-5 g-1 ">
   <div class="col">
     <div class="card h-100" id="movie-card">
 
        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10467242_b_v9_aa.jpg"  class="card-img-top" alt="...">
       <div class="card-body" id="picture-cards">
-        <h5 class="card-title" id="words">VIKINGS</h5>
+        <h5 class="card-title " id="words">VIKINGS</h5>
         
       </div>
 
@@ -129,7 +134,7 @@
 </div>
 </div> 
 
-<div class="btn-group">
+<div class="btn-group front">
   <button type="button" class="btn btn-secondary dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
     Anime
   </button>
@@ -140,7 +145,7 @@
   </ul>
 </div>
 <!-- Cards  -->
-<div class="container">
+<div class="container front">
 <div class="row row-cols-1 row-cols-md-5 g-1 ">
 <div class="col">
 <div class="card h-100">
@@ -176,7 +181,7 @@
 </div>
 </div>
 
-<div class="btn-group">
+<div class="btn-group front">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Romance
   </button>
@@ -187,7 +192,7 @@
   </ul>
 </div>
 <!-- Cards  -->
-<div class="container">
+<div class="container front">
 <div class="row row-cols-1 row-cols-md-5 g-1 ">
 <div class="col">
 <div class="card h-100" id="movie-card">
@@ -545,7 +550,9 @@
 
 
 
-
+  <div class="container">
+    <div id="movie-view"> </div>
+    
 
 
 
@@ -590,7 +597,7 @@
 </div>
 
 </footer>
-
+</div>
 
 
 <!-- js, api here     -->
