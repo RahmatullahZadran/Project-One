@@ -28,7 +28,7 @@ function openPopup() {
 $("#find-movie").on("click", function (event) {
 
   //empty previous movie
-  // $("#movie-view").empty();
+  $("#movie-view").empty();
 
   $(".front").remove();
   // changeWebsite()
