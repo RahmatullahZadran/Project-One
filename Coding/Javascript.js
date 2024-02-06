@@ -28,6 +28,13 @@ function openPopup() {
 
 // This .on("click") function will trigger the Fetch Call
 $("#find-movie").on("click", function (event) {
+
+  //empty previous movie
+  $("#movie-view").empty();
+
+  $(".front").remove();
+  // changeWebsite()
+
   // Preventing the submit button from trying to submit the form
   // We're optionally using a form so the user may hit Enter to search instead of clicking the button
   event.preventDefault();
@@ -49,8 +56,9 @@ $("#find-movie").on("click", function (event) {
       var movieView = $("#movie-view");
 
       $("#movie-view").append("<h2>" + data.Title + "</h2>");
+      $("#movie-view").append('<img class = "logo2" src="./20240130_215001_0000_480.png" alt="Your Next Watch Company Logo">');
       $("#movie-view").append(
-        "<img src=" + data.Poster + " alt=" + data.Title + ">"
+        "<img height=300 width=200 src=" + data.Poster + " alt=" + data.Title + ">"
       );
       $("#movie-view").append("<p>Year: " + data.Year + "</p>");
       $("#movie-view").append("<p>Rated: " + data.Rated + "</p>");
@@ -60,5 +68,26 @@ $("#find-movie").on("click", function (event) {
       $("#movie-view").append("<p>Runtime: " + data.Runtime + "</p>");
       $("#movie-view").append("<p>Plot: " + data.Plot + "</p>");
       $("#movie-view").append("<p>Actors: " + data.Actors + "</p>");
+      $("#movie-view").append("<p>Director: " + data.Director + "</p>");
+     
+     
+      // $(".logo2").css("width", "px");
+      $(".logo2").css("margin-left", "900px");
+      $(".logo2").css("margin-top", "0px");
+      $(".logo2").css("width", "100px");
+      $(".logo2").css("display", "block");
+      $(".logo2").css("margin-bottom", "-100px");
+      $(".logo2").css("border-radius", "20px");
+
+
+
+      movieView.css("display", "block");
+      movieView.css("width", "auto");
+      movieView.css("border-radius", "20px");
+      movieView.css("box-shadow", "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)");
+      movieView.css("padding", "20px");
+      movieView.css("background-color", "grey");
+    
     });
 });
+

@@ -1,7 +1,7 @@
 .logo {
-    height: 70px;
+
     width: 70px;
-    padding-left: 15px;
+    padding-left: 4px;
     padding-top: 10px;
 }
 
@@ -38,19 +38,9 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#movie-view {
+    color: white;
+}
 
 
 
