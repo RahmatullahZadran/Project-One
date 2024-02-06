@@ -1,11 +1,13 @@
-nav div img {
-    height: 70px;
-    padding-left: 15px;
+.logo {
+
+    width: 70px;
+    padding-left: 4px;
     padding-top: 10px;
 }
 
 
 body {
+    
     background-color: black;
 }
 
@@ -14,16 +16,31 @@ body {
 }
 
 #intro {
-    font-family: monospace;
+    font-family: Helvetica,sans-serif;
     font-size: 60px;
+    /* MOSES JUST CHECKING FEW DIFFERENT LOOKS */
+    color: blue; 
+    background-color: black; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                   0 0 20px rgba(255, 255, 255, 0.8),
+                   0 0 30px rgba(255, 255, 255, 0.8);
+    
+    
 }
 
 
+/* MOSES- GIVING THE CARD A FULLER BACKGROUNG TO GO WITH THE PAGE */
+.card-body {
+    border: none;
+    background-color: black;
+    /* padding: 0;    
+    /* margin: 0; */
+}
 
 
-
-
-
+#movie-view {
+    color: white;
+}
 
 
 

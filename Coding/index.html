@@ -16,11 +16,13 @@
 <!-- <header>Your Next Watch</header> -->
 <body>
 <!-- Nav Bar -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
 
     <a class="navbar-brand" href="#">
-      <img class="Logo" src="./images/LOGO.png" alt="Logo" class="d-inline-block align-text-top">
+
+      <img class="logo" width="200px" height="200px" src="../Design/logo/LOGO.png" alt="Logo" class="d-inline-block align-text-top">
+    <img class="logo" src="./images/Logo.png" alt="Logo" class="d-inline-block align-text-top">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -47,13 +49,20 @@
             </li>
           
         </ul>
-        
+
       </div>
     </div>
+
     <form class="d-flex mt-3" role="search" id="movie-search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-primary" type="submit">Search</button>
-        </form>
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="movie-input">
+      <button class="btn btn-outline-success" id="find-movie" type="submit">Search</button>
+  </form>
+    <!-- <form class="d-flex mt-3" role="search" id="movie-search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="movie-input">
+          <a href="./search-page.html">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </a>
+        </form> -->
   </div>
 </nav>
 <br>
@@ -61,16 +70,15 @@
 <br>
       <!-- SHWETA T END -->
       <!-- MOSES A START -->
-
       <!-- Card class for just below navbar -->
-      <div class="card" style="width: 100%; height: 50%;">
+      <div class="card front" style="width: 100%; height: 50%;">
         <div class="card-body">
-          <h5 class="card-title" id="intro"></h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title" id="intro" ></h5>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
 
-      <div class="btn-group">
+      <div class="btn-group front">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Action
         </button>
@@ -81,16 +89,19 @@
         </ul>
       </div>
 <!-- Cards  -->
-<div class="container">
+
+<div  class="container front">
 <div class="row row-cols-1 row-cols-md-5 g-1 ">
   <div class="col">
     <div class="card h-100" id="movie-card">
 
        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10467242_b_v9_aa.jpg"  class="card-img-top" alt="...">
-      <div class="card-body" id="picture-cards">
-        <h5 class="card-title" id="words">VIKINGS</h5>
-        
-      </div>
+
+      <!-- <div class="card-body" id="picture-cards">
+      <h5 class="card-title" id="words">VIKINGS</h5>
+        <div class="card-body" id="picture-cards">
+        <h5 class="card-title " id="words">VIKINGS</h5>
+      </div> -->
 
       <!-- <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10467242_b_v9_aa.jpg"  class="card-img-top" alt="..."  onclick="openPopup()" style="cursor: pointer;"> -->
       
@@ -124,7 +135,7 @@
 </div>
 </div> 
 
-<div class="btn-group">
+<div class="btn-group front">
   <button type="button" class="btn btn-secondary dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
     Anime
   </button>
@@ -135,7 +146,7 @@
   </ul>
 </div>
 <!-- Cards  -->
-<div class="container">
+<div class="container front">
 <div class="row row-cols-1 row-cols-md-5 g-1 ">
 <div class="col">
 <div class="card h-100">
@@ -171,7 +182,7 @@
 </div>
 </div>
 
-<div class="btn-group">
+<div class="btn-group front">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Romance
   </button>
@@ -182,7 +193,7 @@
   </ul>
 </div>
 <!-- Cards  -->
-<div class="container">
+<div class="container front">
 <div class="row row-cols-1 row-cols-md-5 g-1 ">
 <div class="col">
 <div class="card h-100" id="movie-card">
@@ -540,6 +551,8 @@
 
 
 
+<div class="container">
+<div id="movie-view"> </div>
 
 
 
@@ -585,7 +598,7 @@
 </div>
 
 </footer>
-
+</div>
 
 
 <!-- js, api here     -->
@@ -598,6 +611,7 @@
 <script src="./Javascript.js"></script>
 <!-- fontawesome CDN link -->
 <script src="https://kit.fontawesome.com/ff5a71cd88.js" crossorigin="anonymous"></script>
+<script src="JS Fault fiding.js"></script>
 </body>
 </html>
 <!-- AARON A END -->
