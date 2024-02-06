@@ -562,6 +562,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.Logo {
+    width: 110px;
+    height: 100px;
+    transform: translateY(-2px);
+    padding-top: 18px;
+}
+
 body { padding-top: 40px; }
 
 .navbar {
