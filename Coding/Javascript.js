@@ -24,6 +24,8 @@ function openPopup() {
 
   onload = typeWriter()
 
+  
+
 // This .on("click") function will trigger the Fetch Call
 $("#find-movie").on("click", function (event) {
 
