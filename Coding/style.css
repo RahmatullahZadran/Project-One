@@ -45,8 +45,15 @@ body {
     color: white;
 }
 
-
-
+#spotifyInfo {
+    color: white;
+}
+#spotifyInfo i{
+    font-size: 30px;
+}
+#spotifyInfo a{
+    text-decoration: none;
+}
 
 
 
