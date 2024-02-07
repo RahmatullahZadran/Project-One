@@ -87,6 +87,7 @@ $("#find-movie").on("click", function (event) {
       movieView.css("box-shadow", "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)");
       movieView.css("padding", "20px");
       movieView.css("background-color", "grey");
+      
 
     
     
@@ -111,7 +112,16 @@ $("#find-movie").on("click", function (event) {
       $("#spotifyInfo").append("<p>Playlist Name: " + data.playlists.items[0].name + "</p>");
       // link
       console.log(data.playlists.items[0].external_urls.spotify);
-      $("#spotifyInfo").append("<a href=" + data.playlists.items[0].external_urls.spotify + ">Spotify Link</a>");
+      $("#spotifyInfo").append(`<i class="fa-brands fa-spotify"></i>`);
+      $("#spotifyInfo").append("<a target='_blank' href=" + data.playlists.items[0].external_urls.spotify + "> Spotify Playlist Link🔗</a>");
+
+      $("#spotifyInfo").css("display", "block");
+      $("#spotifyInfo").css("width", "auto");
+      $("#spotifyInfo").css("border-radius", "20px");
+      $("#spotifyInfo").css("box-shadow", "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)");
+      $("#spotifyInfo").css("padding", "20px");
+      $("#spotifyInfo").css("background-color", "#023020");
+      // $("#spotifyInfo").css("font-size", "30px");
     })
     .catch(error => console.error('Error:', error));
     });
