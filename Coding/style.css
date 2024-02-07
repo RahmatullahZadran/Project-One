@@ -7,6 +7,7 @@
 
 
 body {
+    
     background-color: black;
 }
 
@@ -15,18 +16,34 @@ body {
 }
 
 #intro {
-    font-family: monospace;
+    font-family: Helvetica,sans-serif;
     font-size: 60px;
+    /* MOSES JUST CHECKING FEW DIFFERENT LOOKS */
+    color: blue; 
+    background-color: black; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                   0 0 20px rgba(255, 255, 255, 0.8),
+                   0 0 30px rgba(255, 255, 255, 0.8);
+    
+    
 }
+
+
+/* MOSES- GIVING THE CARD A FULLER BACKGROUNG TO GO WITH THE PAGE */
+.card-body {
+    display: flex;
+    border: 50px;
+    background-color: black;
+    margin: 5px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #movie-view {
     color: white;
 }
-
-
-
-
-
 
 
 
@@ -548,6 +565,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.Logo {
+    width: 110px;
+    height: 100px;
+    transform: translateY(-2px);
+    padding-top: 18px;
+}
+
 body { padding-top: 40px; }
 
 .navbar {
@@ -614,7 +638,7 @@ body { padding-top: 40px; }
 }
 
 .social-links .fa-brands {
-    font-size: 50px;
+    font-size: 40px;
     padding: 15px;
 }
 

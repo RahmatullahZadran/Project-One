@@ -24,6 +24,8 @@ function openPopup() {
 
   onload = typeWriter()
 
+  
+
 // This .on("click") function will trigger the Fetch Call
 $("#find-movie").on("click", function (event) {
 
@@ -89,6 +91,173 @@ $("#find-movie").on("click", function (event) {
     
     
     });
-});
+
+
+    fetch("https://api.spotify.com/v1/search?q=" + movie + "&type=playlist&limit=3&include_external=audio", {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${"BQBoa2NH3KhxmeF49E4thi3smcyV0ejpIhnmlz6Gr61nGh4iOgaWm0q3rKPiNcs2GHTu49-ay_Xvt9cle1JhALWLPfgJCgqW5eOlmi017_HGv8O-Tec"}`,
+      },
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      // Process the API response as needed
+      // Image
+      console.log(data.playlists.items[0].images[0].url);
+      $("#spotifyInfo").append("<img height=150 width=150 src=" + data.playlists.items[0].images[0].url + " alt=" + data.playlists.items[0].name + ">");
+      // Name
+      console.log(data.playlists.items[0].name);
+      $("#spotifyInfo").append("<p>Playlist Name: " + data.playlists.items[0].name + "</p>");
+      // link
+      console.log(data.playlists.items[0].external_urls.spotify);
+      $("#spotifyInfo").append("<a href=" + data.playlists.items[0].external_urls.spotify + ">Spotify Link</a>");
+    })
+    .catch(error => console.error('Error:', error));
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
