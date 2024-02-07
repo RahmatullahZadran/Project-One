@@ -121,3 +121,19 @@ $.ajax(settings3).done(function (response) {
 // } catch (error) {
 // 	console.error(error);
 // }
+
+const settings4 = {
+	async: true,
+	crossDomain: true,
+	url: 'https://juanroldan1989-moviequotes-v1.p.rapidapi.com/api/v1/quotes',
+	method: 'GET',
+	headers: {
+		Authorization: 'Token token=yd8WzkWNEEzGtqMSgiZBrwtt',
+		'X-RapidAPI-Key': '74eee32de0msh2eeddd8dfa20c32p1fb626jsn06a7ada8f1e4',
+		'X-RapidAPI-Host': 'juanroldan1989-moviequotes-v1.p.rapidapi.com'
+	}
+};
+
+$.ajax(settings4).done(function (response) {
+	console.log(response);
+});
