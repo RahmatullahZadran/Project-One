@@ -71,6 +71,10 @@ body {
     margin-left: 30px;
 }
 
+#year-dropdown {
+    margin-left: 30px;
+}
+
 #movie-view {
     color: white;
 }
