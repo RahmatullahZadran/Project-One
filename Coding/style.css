@@ -28,6 +28,15 @@ body {
     
 }
 
+.card-front {
+    display: flex;
+    border: 50px;
+    background-color: black;
+    margin: 5px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
 
 /* MOSES- GIVING THE CARD A FULLER BACKGROUNG TO GO WITH THE PAGE */
 .card-body {
