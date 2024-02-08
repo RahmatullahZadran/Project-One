@@ -1,47 +1,81 @@
-const settings = {
-	async: true,
-	crossDomain: true,
-	url: 'https://moviesdatabase.p.rapidapi.com/titles/x/upcoming',
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '74eee32de0msh2eeddd8dfa20c32p1fb626jsn06a7ada8f1e4',
-		'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
-	}
-};
+var year = 2024;
+var genre = "Action";  // Set initial genre
 
-$.ajax(settings).done(function (response) {
+$(document).ready(function () {
+    // Make the initial API request and update images based on the selected genre
+    makeApiRequestAndUpdateImages();
+    makeApiRequestAndUpdateImages2();
+    makeApiRequestAndUpdateImages3();
 
-   var pic1 = response.results[0].primaryImage.url;
-//first row
-    //replace src with the first image from the response array
-    $('.img1').attr('src', response.results[0].primaryImage.url);
-    $('.img2').attr('src', response.results[1].primaryImage.url);
-    $('.img3').attr('src', response.results[4].primaryImage.url);
-    $('.img4').attr('src', response.results[5].primaryImage.url);
-    $('.img5').attr('src', response.results[6].primaryImage.url);
+    // Update genre when a dropdown item is clicked
+    $('.dropdown-item').click(function () {
+        genre = $(this).text();
+        // You can now use the updated 'genre' variable in your existing code
+        console.log('Selected Genre:', genre);
 
+        // Make the API request and update images based on the selected genre
+        makeApiRequestAndUpdateImages();
+        makeApiRequestAndUpdateImages2();
+        makeApiRequestAndUpdateImages3();
+    });// Update year when a dropdown item is clicked
+    $('.dropdown-item.year').click(function () {
+        year = parseInt($(this).text()); // Convert the selected year to an integer
+        // You can now use the updated 'year' variable in your existing code
+        console.log('Selected Year:', year);
 
-    // $('.img6').attr('src', response.results[7].primaryImage.url);
-    // $('.img7').attr('src', response.results[8].primaryImage.url);
-    // $('.img8').attr('src', response.results[9].primaryImage.url);
-    // $('.img9').attr('src', response.results[8].primaryImage.url);
-    // $('.img10').attr('src', response.results[9].primaryImage.url);
-    // $('.img11').attr('src', response.results[10].primaryImage.url);
-    // $('.img12').attr('src', response.results[11].primaryImage.url);
-    // $('.img13').attr('src', response.results[12].primaryImage.url);
-    // $('.img14').attr('src', response.results[13].primaryImage.url);
-    // $('.img15').attr('src', response.results[14].primaryImage.url);
+        // Make the API request and update images based on the selected genre and year
+        makeApiRequestAndUpdateImages();
+    });
 
-	console.log(response);
 });
 
+// Function to make the API request and update images
+function makeApiRequestAndUpdateImages() {
+    const settings = {
+        async: true,
+        crossDomain: true,
+        url: 'https://moviesdatabase.p.rapidapi.com/titles?genre=' + genre + '&page=1&endYear=' + year,
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '74eee32de0msh2eeddd8dfa20c32p1fb626jsn06a7ada8f1e4',
+            'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+        }
+    };
+
+    $.ajax(settings).done(function (response) {
+        // Update images based on the response
+        let startIndex = 1;
+        let endIndex = 5;
+        let usedURLs = new Set();
+
+        for (let i = startIndex; i <= endIndex; i++) {
+            let resultIndex = 0;
+
+            while (resultIndex < response.results.length) {
+                let result = response.results[resultIndex];
+
+                if (result && result.primaryImage && result.primaryImage.url && !usedURLs.has(result.primaryImage.url)) {
+                    $(`.img${i}`).attr('src', result.primaryImage.url);
+                    usedURLs.add(result.primaryImage.url);
+                    break;  // Move to the next image after setting the URL
+                }
+
+                resultIndex++;
+            }
+        }
+
+        console.log(response);
+    });
+}
+
+
+
 console.log("Hello World");
-
-
+function makeApiRequestAndUpdateImages2() {
 const settings2 = {
 	async: true,
 	crossDomain: true,
-	url: 'https://moviesdatabase.p.rapidapi.com/titles/x/upcoming?page=2',
+	url: 'https://moviesdatabase.p.rapidapi.com/titles?genre=' + genre + '&page=2&endYear=' + year,
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '74eee32de0msh2eeddd8dfa20c32p1fb626jsn06a7ada8f1e4',
@@ -50,16 +84,36 @@ const settings2 = {
 };
 
 $.ajax(settings2).done(function (response) {
-    $('.img6').attr('src', response.results[0].primaryImage.url);
-    $('.img7').attr('src', response.results[3].primaryImage.url);
-    $('.img8').attr('src', response.results[5].primaryImage.url);
-    $('.img9').attr('src', response.results[7].primaryImage.url);
-    $('.img10').attr('src', response.results[8].primaryImage.url);
-    // $('.img11').attr('src', response.results[5].primaryImage.url);
-    // $('.img12').attr('src', response.results[6].primaryImage.url);
-    // $('.img13').attr('src', response.results[7].primaryImage.url);
-    // $('.img14').attr('src', response.results[8].primaryImage.url);
-    // $('.img15').attr('src', response.results[9].primaryImage.url);
+
+    let startIndex = 6;
+    let endIndex = 10;
+    let usedURLs = new Set();
+    
+    for (let i = startIndex; i <= endIndex; i++) {
+        let resultIndex = 0;
+    
+        while (resultIndex < response.results.length) {
+            let result = response.results[resultIndex];
+    
+            if (result && result.primaryImage && result.primaryImage.url && !usedURLs.has(result.primaryImage.url)) {
+                $(`.img${i}`).attr('src', result.primaryImage.url);
+                usedURLs.add(result.primaryImage.url);
+                break;  // Move to the next image after setting the URL
+            }
+    
+            resultIndex++;
+        }
+    }
+    // $('.img6').attr('src', response.results[0].primaryImage.url);
+    // $('.img7').attr('src', response.results[3].primaryImage.url);
+    // $('.img8').attr('src', response.results[5].primaryImage.url);
+    // $('.img9').attr('src', response.results[7].primaryImage.url);
+    // $('.img10').attr('src', response.results[8].primaryImage.url);
+    // // $('.img11').attr('src', response.results[5].primaryImage.url);
+    // // $('.img12').attr('src', response.results[6].primaryImage.url);
+    // // $('.img13').attr('src', response.results[7].primaryImage.url);
+    // // $('.img14').attr('src', response.results[8].primaryImage.url);
+    // // $('.img15').attr('src', response.results[9].primaryImage.url);
     
     
 
@@ -68,11 +122,13 @@ $.ajax(settings2).done(function (response) {
 
 	console.log(response);
 });
+}
 
+function makeApiRequestAndUpdateImages3() {
 const settings3 = {
 	async: true,
 	crossDomain: true,
-	url: 'https://moviesdatabase.p.rapidapi.com/titles/x/upcoming?page=3',
+	url: 'https://moviesdatabase.p.rapidapi.com/titles?genre=' + genre + '&page=3&endYear=' + year,
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '74eee32de0msh2eeddd8dfa20c32p1fb626jsn06a7ada8f1e4',
@@ -81,20 +137,63 @@ const settings3 = {
 };
 
 $.ajax(settings3).done(function (response) {
+
     // $('.img6').attr('src', response.results[0].primaryImage.url);
     // $('.img7').attr('src', response.results[3].primaryImage.url);
     // $('.img8').attr('src', response.results[5].primaryImage.url);
     // $('.img9').attr('src', response.results[7].primaryImage.url);
     // $('.img10').attr('src', response.results[8].primaryImage.url);
+    let startIndex = 11;
+let endIndex = 15;
+let usedURLs = new Set();
 
-    $('.img11').attr('src', response.results[0].primaryImage.url);
-    $('.img12').attr('src', response.results[1].primaryImage.url);
-    $('.img13').attr('src', response.results[2].primaryImage.url);
-    $('.img14').attr('src', response.results[6].primaryImage.url);
-    $('.img15').attr('src', response.results[5].primaryImage.url);
+for (let i = startIndex; i <= endIndex; i++) {
+    let resultIndex = 0;
+
+    while (resultIndex < response.results.length) {
+        let result = response.results[resultIndex];
+
+        if (result && result.primaryImage && result.primaryImage.url && !usedURLs.has(result.primaryImage.url)) {
+            $(`.img${i}`).attr('src', result.primaryImage.url);
+            usedURLs.add(result.primaryImage.url);
+            break;  // Move to the next image after setting the URL
+        }
+
+        resultIndex++;
+    }
+}
+
+
+    
+
+
+
+
+   
+    // if (response.results[0] && response.results[0].primaryImage && response.results[0].primaryImage.url) {
+    //     $('.img11').attr('src', response.results[0].primaryImage.url);
+    // }
+    
+    // if (response.results[1] && response.results[1].primaryImage && response.results[1].primaryImage.url) {
+    //     $('.img12').attr('src', response.results[1].primaryImage.url);
+    // }
+    
+    // if (response.results[2] && response.results[2].primaryImage && response.results[2].primaryImage.url) {
+    //     $('.img13').attr('src', response.results[2].primaryImage.url);
+    // }
+    
+    // if (response.results[6] && response.results[6].primaryImage && response.results[6].primaryImage.url) {
+    //     $('.img14').attr('src', response.results[6].primaryImage.url);
+    // }
+    
+    // if (response.results[5] && response.results[5].primaryImage && response.results[5].primaryImage.url) {
+    //     $('.img15').attr('src', response.results[5].primaryImage.url);
+    // }
+    
 
 	console.log(response);
 });
+}
 
 
 
@@ -122,18 +221,18 @@ $.ajax(settings3).done(function (response) {
 // 	console.error(error);
 // }
 
-const settings4 = {
-	async: true,
-	crossDomain: true,
-	url: 'https://juanroldan1989-moviequotes-v1.p.rapidapi.com/api/v1/quotes',
-	method: 'GET',
-	headers: {
-		Authorization: 'Token token=yd8WzkWNEEzGtqMSgiZBrwtt',
-		'X-RapidAPI-Key': '74eee32de0msh2eeddd8dfa20c32p1fb626jsn06a7ada8f1e4',
-		'X-RapidAPI-Host': 'juanroldan1989-moviequotes-v1.p.rapidapi.com'
-	}
-};
+// const settings4 = {
+// 	async: true,
+// 	crossDomain: true,
+// 	url: 'https://juanroldan1989-moviequotes-v1.p.rapidapi.com/api/v1/quotes',
+// 	method: 'GET',
+// 	headers: {
+// 		Authorization: 'Token token=yd8WzkWNEEzGtqMSgiZBrwtt',
+// 		'X-RapidAPI-Key': '74eee32de0msh2eeddd8dfa20c32p1fb626jsn06a7ada8f1e4',
+// 		'X-RapidAPI-Host': 'juanroldan1989-moviequotes-v1.p.rapidapi.com'
+// 	}
+// };
 
-$.ajax(settings4).done(function (response) {
-	console.log(response);
-});
+// $.ajax(settings4).done(function (response) {
+// 	console.log(response);
+// });

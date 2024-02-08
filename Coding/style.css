@@ -113,7 +113,12 @@ body {
 
 
 
-
+/* Style for scrollable menu */
+.scrollable-menu {
+    max-height: 200px; /* Set the maximum height for the dropdown menu */
+    overflow-y: auto; /* Enable vertical scrolling when the number of items exceeds the max-height */
+}
+ 
 
 
 
