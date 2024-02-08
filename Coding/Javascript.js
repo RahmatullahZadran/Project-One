@@ -1,5 +1,6 @@
 console.log("Hello World");
 
+
 //popup function, Rahmatullah working on it
 function openPopup() {
     document.getElementById('overlay').style.display = 'flex';
@@ -9,9 +10,11 @@ function openPopup() {
     document.getElementById('overlay').style.display = 'none';
   }
 
+
+
   // typing effect for intro card
   var i = 0;
-  var txt = "Movie fanatic?... Want to know more about the latest movies?... You're in the right place! This is...YOUR NEXT WATCH!";
+  var txt = "I hope you're ready for YOUR NEXT WATCH!";
   var speed = 50;
 
   function typeWriter() {
@@ -97,7 +100,7 @@ $("#find-movie").on("click", function (event) {
     fetch("https://api.spotify.com/v1/search?q=" + movie + "&type=playlist&limit=3&include_external=audio", {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${"BQBoa2NH3KhxmeF49E4thi3smcyV0ejpIhnmlz6Gr61nGh4iOgaWm0q3rKPiNcs2GHTu49-ay_Xvt9cle1JhALWLPfgJCgqW5eOlmi017_HGv8O-Tec"}`,
+        // 'Authorization': `Bearer ${"BQA1DrkhV6zwIkiC79R2LmlhfWrysnzUQFZpcKldjdIOGOEbQhmujjqroEFaaGnFmzNSnMCt6dxFQOj1AFLMR1FGXDOXI3jE-4h7dNSgBEF9jo18720"}`,
       },
     })
     .then(response => response.json())
