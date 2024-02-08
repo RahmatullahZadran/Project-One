@@ -67,6 +67,9 @@ body {
     align-items: center;
 }
 
+#genre-dropdown {
+    margin-left: 30px;
+}
 
 #movie-view {
     color: white;
@@ -82,7 +85,14 @@ body {
     text-decoration: none;
 }
 
-
+.genre-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    margin-left: 9%;
+}
 
 
 
