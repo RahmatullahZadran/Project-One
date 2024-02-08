@@ -91,8 +91,8 @@ body {
 
 .genre-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: start;
     align-items: flex-start;
     padding-bottom: 10px;
     margin-left: 9%;
