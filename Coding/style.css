@@ -28,6 +28,24 @@ body {
     
 }
 
+#footer-glow {
+    font-family: Helvetica,sans-serif;
+    font-size: 60px;
+    /* MOSES JUST CHECKING FEW DIFFERENT LOOKS */
+    color: blue; 
+    background-color: black; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                   0 0 20px rgba(255, 255, 255, 0.8),
+                   0 0 30px rgba(255, 255, 255, 0.8);
+    
+    
+}
+
+
+
+
+
+
 .card-front {
     display: flex;
     border: 50px;
