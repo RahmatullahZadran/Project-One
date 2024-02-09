@@ -15,6 +15,7 @@ $(document).ready(function () {
     makeApiRequestAndUpdateImages();
     makeApiRequestAndUpdateImages2();
     makeApiRequestAndUpdateImages3();
+    updateButtonPlaceholderText(); // Update button placeholder text
   });
 
   // Update year when a year dropdown item is clicked
@@ -22,13 +23,25 @@ $(document).ready(function () {
     year = parseInt($(this).text());
     localStorage.setItem("year", year);
     makeApiRequestAndUpdateImages();
+    updateButtonPlaceholderText(); // Update button placeholder text
   });
 });
 
 function loadCurrentGenreYear() {
-  localStorage.getItem("year");
-  localStorage.getItem("genre");
-}
+    var selectedYear = localStorage.getItem("year");
+    var selectedGenre = localStorage.getItem("genre");
+    // updates placeholder text in the year and genre button with the current genre and year
+    $(".yearBtn").text(selectedYear);
+    $(".genreBtn").text(selectedGenre);
+  }
+
+  function updateButtonPlaceholderText() {
+    var selectedYear = localStorage.getItem("year");
+    var selectedGenre = localStorage.getItem("genre");
+    $(".yearBtn").text(selectedYear);
+    $(".genreBtn").text(selectedGenre);
+  }
+
 
 // Function to make the API request and update images
 function makeApiRequestAndUpdateImages() {
