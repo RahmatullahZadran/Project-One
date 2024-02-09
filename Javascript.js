@@ -100,7 +100,7 @@ $("#find-movie").on("click", function (event) {
     fetch("https://api.spotify.com/v1/search?q=" + movie + "&type=playlist&limit=3&include_external=audio", {
       method: 'GET',
       headers: {
-        // 'Authorization': `Bearer ${"BQA1DrkhV6zwIkiC79R2LmlhfWrysnzUQFZpcKldjdIOGOEbQhmujjqroEFaaGnFmzNSnMCt6dxFQOj1AFLMR1FGXDOXI3jE-4h7dNSgBEF9jo18720"}`,
+        'Authorization': `Bearer ${"BQC9VBptmSSTwBrylrCleEcv4HZIxqgjUu3ZSOJ-UeodQgdqbc0tO9lMCe9Nv_78RbLJ6Joq8F7vmtCUu9pkibIhd3onXt6TnX5LH57aqBzLZUqQZE0"}`,
       },
     })
     .then(response => response.json())
