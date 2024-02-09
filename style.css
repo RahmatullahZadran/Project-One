@@ -683,8 +683,8 @@ body { padding-top: 40px; }
     padding-left: 15px;
 }
 
-.footer-links a {
-    font-size: 25px;
+.footer-links p {
+    font-size: 20px;
     text-decoration: none;
     color: white;
     padding: 5px;
