@@ -99,7 +99,7 @@ $("#find-movie").on("click", function (event) {
     {
       method: "GET",
       headers: {
-        // 'Authorization': `Bearer ${"BQA1DrkhV6zwIkiC79R2LmlhfWrysnzUQFZpcKldjdIOGOEbQhmujjqroEFaaGnFmzNSnMCt6dxFQOj1AFLMR1FGXDOXI3jE-4h7dNSgBEF9jo18720"}`,
+        'Authorization': `Bearer ${"BQBWsmC2l7fbQdWROAjbI-EyyedcyOyZQNEatVZE7kCDDF63mhH8BzvO9aneCNSz7a2leWn_ErcO0OEVmLUWaL5SKQUK8BjWhRf7laPeIwjenzjIkaA"}`,
       },
     }
   )
