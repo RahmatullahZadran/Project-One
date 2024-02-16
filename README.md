@@ -18,6 +18,9 @@ YOUR NEXT WATCH is a web application where users can search for movies and find 
 ## Introduction
 As a group, we have created a simple movie search website using the below listed APIs in the features section. With the movie search function you can find movies that you want to learn more about as well as finding the movie soundtracks with the powerful Spotify API to find publicly curated movie playlists.
 
+Please feel free to check out our Google Slides presentation preview as well
+[🔗Link](https://docs.google.com/presentation/d/1RpcYFeXRBhfwhucZ0WfVA0jnksjaLRQKsjREqOYFj3s/edit#slide=id.p)
+
 ## Features
 List the key features of your project. Consider using bullet points for better readability.
 
