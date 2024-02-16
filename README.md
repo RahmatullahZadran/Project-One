@@ -1,6 +1,10 @@
 # Group Project - YOUR NEXT WATCH
 YOUR NEXT WATCH is a web application where users can search for movies and find relevant information about movies and series. Users can get recommendation based on their preferences and can look up spotify playlists for their favorite movies and series.
 
+## Links
+- [Deployed Link](https://rahmatullahzadran.github.io/Project-One/)
+- [Repository Link](https://github.com/RahmatullahZadran/Project-One)
+
 # Table of Contents
 * Introduction
 * Features
@@ -10,8 +14,9 @@ YOUR NEXT WATCH is a web application where users can search for movies and find 
 * Usage
 * Contributing
 * Acknowledgments
-* Introduction
-* Provide a brief introduction to the project. Explain its purpose and main features.
+
+## Introduction
+As a group, we have created a simple movie search website using the below listed APIs in the features section. With the movie search function you can find movies that you want to learn more about as well as finding the movie soundtracks with the powerful Spotify API to find publicly curated movie playlists.
 
 ## Features
 List the key features of your project. Consider using bullet points for better readability.
@@ -36,13 +41,16 @@ A list of software and tools used in the creation of the project.
 ## Installation
 Step-by-step guide on how to install and configure the project.
 
-1. 
-2. 
-3. 
-4. ...
+1. Open up the repo from this [https://github.com/RahmatullahZadran/Project-One](🔗link) 
+2. Git Clone the repo
+3. Edit it how you like
+4. Run on Live Server to view the results
 
 ## Usage
-Explain how to use the project once it's set up. Provide examples and code snippets if necessary.
+
+You can view the [deployed page from this link](https://rahmatullahzadran.github.io/Project-One/)
+
+While on the home page, you can view the movie selection, otherwise you can run a search  for your favourite movies.
 
 ## Contributing
 * [**Aaron Armstrong - Front End Developer in training**](https://github.com/aaron1490)
