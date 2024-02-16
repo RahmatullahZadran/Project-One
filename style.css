@@ -1,5 +1,4 @@
 .logo {
-
     width: 70px;
     padding-left: 4px;
     padding-top: 10px;
@@ -7,7 +6,7 @@
 
 
 body {
-    
+
     background-color: black;
 }
 
@@ -16,35 +15,26 @@ body {
 }
 
 #intro {
-    font-family: Helvetica,sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 60px;
     /* MOSES JUST CHECKING FEW DIFFERENT LOOKS */
-    color: blue; 
-    background-color: black; 
+    color: blue;
+    background-color: black;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-                   0 0 20px rgba(255, 255, 255, 0.8),
-                   0 0 30px rgba(255, 255, 255, 0.8);
-    
-    
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.8);
 }
 
 #footer-glow {
-    font-family: Helvetica,sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 60px;
     /* MOSES JUST CHECKING FEW DIFFERENT LOOKS */
-    color: blue; 
-    background-color: black; 
+    color: blue;
+    background-color: black;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-                   0 0 20px rgba(255, 255, 255, 0.8),
-                   0 0 30px rgba(255, 255, 255, 0.8);
-    
-    
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.8);
 }
-
-
-
-
-
 
 .card-front {
     display: flex;
@@ -82,10 +72,12 @@ body {
 #spotifyInfo {
     color: white;
 }
-#spotifyInfo i{
+
+#spotifyInfo i {
     font-size: 30px;
 }
-#spotifyInfo a{
+
+#spotifyInfo a {
     text-decoration: none;
 }
 
@@ -98,518 +90,13 @@ body {
     margin-left: 9%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Style for scrollable menu */
 .scrollable-menu {
-    max-height: 200px; /* Set the maximum height for the dropdown menu */
-    overflow-y: auto; /* Enable vertical scrolling when the number of items exceeds the max-height */
+    max-height: 200px;
+    /* Set the maximum height for the dropdown menu */
+    overflow-y: auto;
+    /* Enable vertical scrolling when the number of items exceeds the max-height */
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * {
     margin: 0px;
@@ -625,7 +112,9 @@ body {
     padding-top: 18px;
 }
 
-body { padding-top: 40px; }
+body {
+    padding-top: 40px;
+}
 
 .navbar {
     background-color: black;
@@ -638,6 +127,7 @@ body { padding-top: 40px; }
     font-size: 24px;
     transition: 0.3s;
 }
+
 .nav-link {
     color: white;
     font-weight: 500;
@@ -651,30 +141,32 @@ body { padding-top: 40px; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.5s ease;    
+    transition: 0.5s ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: #0d6efd !important;
 }
 
 @media (min-width: 991px) {
-.nav-link::before { 
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background: #0d6efd;
-    transition: 0.3s ease-in-out;
-}
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: #0d6efd;
+        transition: 0.3s ease-in-out;
+    }
 
-.nav-link:hover::before, .nav-link.active::before {
-    width: 100%;
-    visibility: visible;
-}
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
 }
 
 .footer-title h5 {
@@ -722,20 +214,20 @@ body { padding-top: 40px; }
     background: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
-  }
+}
 
-  /* Styles for the popup */
-  .popup {
+/* Styles for the popup */
+.popup {
     color: white;
     background: #1b1b1b;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 50px blueviolet;
-  }
+}
 
-  /* Styles for the close button */
-  .close {
-    background-color: #802525; ;
+/* Styles for the close button */
+.close {
+    background-color: #802525;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -743,154 +235,17 @@ body { padding-top: 40px; }
     box-shadow: 0 0 5px 1px red;
     padding: 5px;
     border-radius: 10px;
-  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-/*   
-  #movie-card {
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-
-  #movie-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
-    transform: skewX(-20deg);
-    animation: shine 1.5s infinite;
-  } */
-
-  @keyframes shine {
+@keyframes shine {
     0% {
-      left: -100%;
+        left: -100%;
     }
+
     100% {
-      left: 100%;
+        left: 100%;
     }
-  }
+}
 
 .moreInfo {
     font-size: 30px;
@@ -905,132 +260,8 @@ body { padding-top: 40px; }
 
 .thumbs {
     font-size: 30px;
-    /* background-color: blue; */
     color: white;
     margin-block-end: auto;
-    /* margin-left: 250px; */
-    /* box-shadow: 0 0 10px 1px blueviolet; */
     padding: 5px;
     border-radius: 10px;
-    /* margin-right: 200px; */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
-
-
